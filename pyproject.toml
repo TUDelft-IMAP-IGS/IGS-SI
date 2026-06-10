@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "preferendus"
+version = "0.1.0"
+description = "ACO-based multi-objective optimisation using the IMAP/Preferendus method."
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [
+    { name = "IMAP-SI contributors" },
+]
+keywords = ["optimization", "ant-colony", "multi-objective", "decision-support"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.12",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+dependencies = [
+    "numpy>=1.26",
+]
+
+[project.optional-dependencies]
+examples = [
+    "matplotlib>=3.10.9",
+    "scipy>=1.17.1",
+]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
