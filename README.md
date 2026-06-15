@@ -198,3 +198,9 @@ If you're using the workspace virtual environment on Windows:
 .venv\Scripts\python.exe -m compileall src examples/utils
 .venv\Scripts\python.exe -m pytest
 ```
+
+---
+
+## License
+
+This project is licensed under the **MIT License** — see the [`LICENSE`](./LICENSE) file for details.
