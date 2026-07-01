@@ -7,19 +7,12 @@ Multi-objective route optimisation using **Ant Colony Optimisation (ACO)** and t
 
 ## What is this?
 
-The **Preferendus** method evaluates design alternatives by converting raw objective
-values (distance, slope, cost, …) into *preference scores* via stakeholder-defined
-preference functions, then aggregating those scores using a population-relative
-z-score normalisation (`a_fine_aggregator`).  The key property: **the same solution
-can receive a different score in a different iteration**, because scoring is relative
-to the current population — not absolute.
-
 This package provides a `PreferendusACO` decorator that wraps any graph-evaluation
 function and optimises the path through the graph using ACO, following exactly the
 same interface as a GA-based Preferendus decorator.  Any directed graph problem can
 be solved by:
 
-1. defining preference functions for each objective
+1. defining preference functions for each stakeholder for each objective
 2. passing a graph dict with edges and edge attributes
 3. writing a simulation function that returns `(None, None, obj1, obj2, ...)`
 4. decorating it with `@PreferendusACO(...)`
