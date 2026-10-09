@@ -1,4 +1,4 @@
-# Preferendus ACO
+# IGS-SI
 
 Multi-objective route optimisation using **Ant Colony Optimisation (ACO)** and the
 **IMAP/Preferendus** preference-aggregation method.
