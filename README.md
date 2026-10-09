@@ -1,6 +1,6 @@
 # IGS-SI
 
-Multi-objective route optimisation using **Ant Colony Optimisation (ACO)** and the
+Multi-objective route optimisation using **Swarm-Intelligence (SI)** metaheuristics and the
 **IMAP/Preferendus** preference-aggregation method.
 
 ---
